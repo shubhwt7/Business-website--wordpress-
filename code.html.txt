@@ -1,0 +1,820 @@
+greenleaf-yoga-wireframe.html
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenLeaf Yoga Studio - Wireframes</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        
+
+        body {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            padding: 40px 20px;
+
+            min-height: 100vh;
+
+        }
+
+        
+
+        .container {
+
+            max-width: 1400px;
+
+            margin: 0 auto;
+
+        }
+
+        
+
+        h1 {
+
+            text-align: center;
+
+            color: white;
+
+            margin-bottom: 40px;
+
+            font-size: 2.5em;
+
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+        }
+
+        
+
+        .wireframes {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+            gap: 40px;
+
+            margin-bottom: 40px;
+
+        }
+
+        
+
+        .wireframe {
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+        }
+
+        
+
+        .wireframe h2 {
+
+            color: #4a5568;
+
+            margin-bottom: 20px;
+
+            padding-bottom: 10px;
+
+            border-bottom: 3px solid #667eea;
+
+        }
+
+        
+
+        .frame {
+
+            border: 2px solid #cbd5e0;
+
+            border-radius: 8px;
+
+            overflow: hidden;
+
+            background: #f7fafc;
+
+        }
+
+        
+
+        .header {
+
+            background: #667eea;
+
+            color: white;
+
+            padding: 20px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        
+
+        .logo {
+
+            font-weight: bold;
+
+            font-size: 1.2em;
+
+        }
+
+        
+
+        .nav {
+
+            display: flex;
+
+            gap: 20px;
+
+            font-size: 0.9em;
+
+        }
+
+        
+
+        .nav-item {
+
+            padding: 5px 10px;
+
+            background: rgba(255,255,255,0.2);
+
+            border-radius: 4px;
+
+        }
+
+        
+
+        .hero {
+
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+
+            padding: 60px 20px;
+
+            text-align: center;
+
+            color: #2d3748;
+
+        }
+
+        
+
+        .hero-title {
+
+            font-size: 1.5em;
+
+            font-weight: bold;
+
+            margin-bottom: 15px;
+
+        }
+
+        
+
+        .hero-text {
+
+            margin-bottom: 20px;
+
+            line-height: 1.6;
+
+        }
+
+        
+
+        .cta-button {
+
+            background: #667eea;
+
+            color: white;
+
+            padding: 12px 30px;
+
+            border-radius: 25px;
+
+            display: inline-block;
+
+            font-weight: bold;
+
+        }
+
+        
+
+        .section {
+
+            padding: 40px 20px;
+
+        }
+
+        
+
+        .section-title {
+
+            font-size: 1.3em;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
+
+            color: #2d3748;
+
+            text-align: center;
+
+        }
+
+        
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+        
+
+        .card {
+
+            background: #edf2f7;
+
+            padding: 20px;
+
+            border-radius: 8px;
+
+            text-align: center;
+
+        }
+
+        
+
+        .card-icon {
+
+            width: 60px;
+
+            height: 60px;
+
+            background: #667eea;
+
+            margin: 0 auto 15px;
+
+            border-radius: 50%;
+
+        }
+
+        
+
+        .card-title {
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+
+            color: #2d3748;
+
+        }
+
+        
+
+        .card-text {
+
+            font-size: 0.85em;
+
+            color: #4a5568;
+
+            line-height: 1.5;
+
+        }
+
+        
+
+        .content-area {
+
+            background: white;
+
+            padding: 40px;
+
+            margin: 20px;
+
+            border-radius: 8px;
+
+        }
+
+        
+
+        .content-title {
+
+            font-size: 1.8em;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
+
+            color: #2d3748;
+
+        }
+
+        
+
+        .content-text {
+
+            line-height: 1.8;
+
+            color: #4a5568;
+
+            margin-bottom: 15px;
+
+        }
+
+        
+
+        .form-group {
+
+            margin-bottom: 20px;
+
+        }
+
+        
+
+        .form-label {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-weight: bold;
+
+            color: #2d3748;
+
+        }
+
+        
+
+        .form-input {
+
+            width: 100%;
+
+            padding: 12px;
+
+            background: #edf2f7;
+
+            border: 2px solid #cbd5e0;
+
+            border-radius: 6px;
+
+        }
+
+        
+
+        .form-input.textarea {
+
+            height: 100px;
+
+        }
+
+        
+
+        .submit-button {
+
+            background: #667eea;
+
+            color: white;
+
+            padding: 12px 40px;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            border: none;
+
+            cursor: pointer;
+
+        }
+
+        
+
+        .footer {
+
+            background: #2d3748;
+
+            color: white;
+
+            padding: 30px 20px;
+
+            text-align: center;
+
+        }
+
+        
+
+        .footer-content {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+
+            margin-bottom: 20px;
+
+        }
+
+        
+
+        .footer-section {
+
+            font-size: 0.85em;
+
+        }
+
+        
+
+        .footer-title {
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+
+        }
+
+        
+
+        .copyright {
+
+            font-size: 0.8em;
+
+            padding-top: 20px;
+
+            border-top: 1px solid #4a5568;
+
+        }
+
+
+        .info-box {
+
+            background: #e6fffa;
+
+            border-left: 4px solid #38b2ac;
+
+            padding: 20px;
+
+            margin: 20px 0;
+
+            border-radius: 4px;
+
+        }
+
+
+        .info-title {
+
+            font-weight: bold;
+
+            color: #234e52;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .info-list {
+
+            color: #2c7a7b;
+
+            line-height: 1.8;
+
+            margin-left: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+       <h1>🧘‍♀️ GreenLeaf Yoga Studio - Wireframes</h1>
+
+        
+
+        <div class="wireframes">
+
+            <!-- Homepage Wireframe -->
+
+            <div class="wireframe">
+
+                <h2>Homepage Wireframe</h2>
+
+                <div class="frame">
+
+                    <!-- Header -->
+
+                    <div class="header">
+
+                        <div class="logo">🍃 GreenLeaf Yoga</div>
+
+                        <div class="nav">
+
+                            <div class="nav-item">Home</div>
+
+                            <div class="nav-item">About</div>
+
+                            <div class="nav-item">Classes</div>
+
+                            <div class="nav-item">Contact</div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Hero Section -->
+
+                    <div class="hero">
+
+                        <div class="hero-title">Find Your Inner Peace</div>
+
+                        <div class="hero-text">Welcome to GreenLeaf Yoga Studio<br>Transform your mind, body, and spirit</div>
+
+                        <div class="cta-button">Book a Class</div>
+
+                    </div>
+
+                    
+
+                    <!-- Features Section -->
+
+                    <div class="section">
+
+                        <div class="section-title">Our Classes</div>
+
+                        <div class="cards">
+
+                            <div class="card">
+
+                                <div class="card-icon"></div>
+
+                                <div class="card-title">Hatha Yoga</div>
+
+                                <div class="card-text">Gentle flow for beginners</div>
+
+                            </div>
+
+                            <div class="card">
+
+                                <div class="card-icon"></div>
+
+                                <div class="card-title">Vinyasa Flow</div>
+
+                                <div class="card-text">Dynamic movement practice</div>
+
+                            </div>
+
+                            <div class="card">
+
+                                <div class="card-icon"></div>
+
+                                <div class="card-title">Meditation</div>
+
+                                <div class="card-text">Mindfulness sessions</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Footer -->
+
+                    <div class="footer">
+
+                        <div class="footer-content">
+
+                            <div class="footer-section">
+
+                                <div class="footer-title">Contact</div>
+
+                                <div>info@greenleaf.com</div>
+
+                            </div>
+
+                            <div class="footer-section">
+
+                                <div class="footer-title">Location</div>
+
+                                <div>123 Wellness Ave</div>
+
+                            </div>
+
+                            <div class="footer-section">
+
+                                <div class="footer-title">Hours</div>
+
+                                <div>Mon-Sun: 6am-9pm</div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- Contact Page Wireframe -->
+
+            <div class="wireframe">
+
+                <h2>Contact Page Wireframe</h2>
+
+                <div class="frame">
+
+                    <!-- Header -->
+
+                    <div class="header">
+
+                        <div class="logo">🍃 GreenLeaf Yoga</div>
+
+                        <div class="nav">
+
+                            <div class="nav-item">Home</div>
+
+                            <div class="nav-item">About</div>
+
+                            <div class="nav-item">Classes</div>
+
+                            <div class="nav-item">Contact</div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Content Area -->
+
+                    <div class="content-area">
+
+                        <div class="content-title">Get in Touch</div>
+
+                       
+
+                        
+
+                        <div class="form-group">
+
+                            <div class="form-label">Full Name</div>
+
+                            <div class="form-input">[Text Input]</div>
+
+                        </div>
+
+                        
+
+                        <div class="form-group">
+
+                            <div class="form-label">Email Address</div>
+
+                            <div class="form-input">[Email Input]</div>
+
+                        </div>
+
+                        
+
+                        <div class="form-group">
+
+                            <div class="form-label">Phone Number</div>
+
+                            <div class="form-input">[Phone Input]</div>
+
+                        </div>
+
+                        
+
+                        <div class="form-group">
+
+                            <div class="form-label">Message</div>
+
+                            <div class="form-input textarea">[Text Area]</div>
+
+                        </div>
+
+                        <div class="form-label"> About Page</div>
+
+                        <div> GreenLeaf Yoga Studio is a peaceful wellness space dedicated to improving physical and mental health. Our certified instructors guide students of all levels through yoga and meditation practices in a calm and supportive environment.</div>
+
+                        
+
+                        <button class="submit-button">Send Message</button>
+
+                        
+
+                        <div class="info-box">
+
+                            <div class="info-title">Other Ways to Reach Us:</div>
+
+                            <div class="info-list">
+
+                                📧 Email: hello@greenleaf.com<br>
+
+                                📞 Phone: (555) 123-4567<br>
+
+                                📍 Address: 123 Wellness Ave, Peaceful City
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Footer -->
+
+                    <div class="footer">
+
+                        <div class="footer-content">
+
+                            <div class="footer-section">
+
+                                <div class="footer-title">Contact</div>
+
+                                <div>info@greenleaf.com</div>
+
+                            </div>
+
+                            <div class="footer-section">
+
+                                <div class="footer-title">Location</div>
+
+                                <div>123 Wellness Ave</div>
+
+                            </div>
+
+                            <div class="footer-section">
+
+                                <div class="footer-title">Hours</div>
+
+                                <div>Mon-Sun: 6am-9pm</div>
+
+                            </div>
+
+                        </div>
+
+                      
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
